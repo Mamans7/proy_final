@@ -1,0 +1,43 @@
+.navbar-brand {
+    display: flex;
+    align-items: left;
+    height: 40px;
+    width: 50px;
+    padding: 5px;
+    margin-right: 70px;
+}
+
+body {
+    background-color: beige;
+}
+
+.icon-container i {
+    color: #110805;
+    /* Color inicial */
+    transition: color 0.3s;
+    /* Transición suave */
+}
+
+.icon-container i:hover {
+    color: #2284ec;
+    /* Cambia a este color al pasar el mouse */
+}
+
+.img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 20px;
+}
+
+.tex {
+    color: #a22110;
+}
+
+.color {
+    color: #e6420b;
+}
+
+.color1 {
+    color: #0b1de6;
+    text-decoration: double;
+}

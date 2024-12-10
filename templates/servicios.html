@@ -1,0 +1,53 @@
+{% include 'header.html' %}
+
+<div class="row mt-3">
+    <div class="col-12 col-md-6 carousel-slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="corrusel carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='img/tapa_primero.png') }}" alt="Tapa de primero" class="img-fluid" />
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='img/tapa_segundo.png') }}" alt="Tapa de segundo" class="img-fluid" />
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='img/tapa_tercero.png') }}" alt="Tapa de tercero" class="img-fluid" />
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='img/tapa_cuarto.png') }}" alt="Tapa de cuarto" class="img-fluid" />
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='img/tapa_quinto.png') }}" alt="Tapa de quinto" class="img-fluid" /><br>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='img/tapa_sexto.png') }}" alt="Tapa de sexto" class="img-fluid" />
+                </div>
+            </div>
+            <!-- Controles del carrusel -->
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </a>
+        </div>
+        <br>
+    </div>
+    <div class="col-6 col-md-6">
+        <h3 class="text-center color"><b>Nuestros Productos</b></h3>
+        <p><b>Primero de Primaria:</b><br> Introduce la lectoescritura y conceptos básicos de matemáticas, con actividades visuales y prácticas. Materias: Lengua, Matemáticas, Ciencias Naturales, Sociales y Educación Artística. <br><b>Segundo de Primaria:</b><br>Consolida
+            lo aprendido, ampliando vocabulario y comprensión lectora. Introduce suma y resta con llevadas. Materias: Lengua, Matemáticas, Ciencias Naturales, Sociales, Artística y Educación Física. <br><b>Tercero de Primaria:</b><br> Desarrolla comprensión
+            lectora, redacción y conceptos como multiplicación y división. Materias: Lengua, Matemáticas, Ciencias Naturales, Sociales, Artística, Inglés y Educación Física. <br><b>Cuarto de Primaria:</b><br> Fomenta el análisis crítico y la resolución
+            de problemas, introduciendo fracciones y conceptos de ciencias. Materias: Lengua, Matemáticas, Ciencias Naturales, Sociales, Artística, Inglés y Educación Física. <br><b>Quinto de Primaria:</b><br> Profundiza en geometría, fracciones y decimales,
+            además de temas de ciencias como energía y ecosistemas. Materias: Lengua, Matemáticas, Ciencias Naturales, Sociales, Artística, Inglés y Educación Física. <br><b>Sexto de Primaria:</b><br> Prepara para la secundaria, con comprensión lectora
+            avanzada y matemáticas como fracciones y geometría. Materias: Lengua, Matemáticas, Ciencias Naturales, Sociales, Artística, Inglés y Educación Física.</p>
+    </div>
+</div>
+<div>
+    <p>Los libros de primaria cubren desde habilidades básicas de lectura, escritura y matemáticas en los primeros grados, hasta temas más avanzados de ciencias, historia y operaciones matemáticas en los últimos grados. Cada nivel está diseñado para desarrollar
+        el conocimiento y pensamiento crítico de manera progresiva, adaptándose a las capacidades y necesidades de los estudiantes, preparando así su transición a la secundaria.</p>
+</div>
+
+{% include 'footer.html' %}

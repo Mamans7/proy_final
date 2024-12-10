@@ -1,0 +1,51 @@
+{% include 'header.html' %}
+<main class="row text-bg-light rounded p-3">
+    <div class="col-6">
+        <div class="col text-center">
+            <h3 class="text-center color p-2"><b>Quiénes somos?</b></h3>
+            <p>Somos una editorial especializada en la creación y publicación de materiales educativos de alta calidad para niños y niñas de educación primaria. Nuestro equipo está conformado por profesionales apasionados por la educación, con experiencia
+                en pedagogía, diseño y comunicación.
+            </p>
+        </div>
+        <br>
+        <div class="row text-center p-2 text-center">
+            <div class="col-5 border border-secondary rounded m-2 text-bg-success pt-1">
+                <h3><b>Misión</b></h3>
+                <p>"Desarrollar y publicar materiales educativos innovadores y de alta calidad que apoyen el aprendizaje y la enseñanza en la educación primaria, fomentando la curiosidad y el amor por el conocimiento en los estudiantes."
+                </p>
+            </div>
+            <div class="col-6 border border-secondary rounded m-2 text-bg-success pt-1">
+                <h3><b>Visión</b></h3>
+                <p>"Ser líderes en la industria editorial educativa, reconocidos por nuestra compromiso con la excelencia y la innovación en la educación primaria, y convertirnos en el socio preferido de los educadores y padres que buscan recursos de calidad
+                    para sus estudiantes."
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 carousel-slide" data-ride="carousel">
+        <h3 class="text-center color p-2"><b>Equipo de trabajo</b></h3>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='img/img1.png') }}" alt="Tapa de primero" class="img-fluid" />
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='img/img2.png') }}" alt="Tapa de segundo" class="img-fluid" />
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='img/img3.png') }}" alt="Tapa de tercero" class="img-fluid" />
+                </div>
+            </div>
+            <!-- Controles del carrusel -->
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </a>
+        </div>
+    </div>
+</main>
+{% include 'footer.html' %}

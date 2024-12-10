@@ -1,15 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+{% include 'header.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<div class="container p-4 mt-3 mb-3" style="background-color: #eee;">
+    <div class="row">
+        <div class="col-12 col-md-6 align-self-end">
+            <h2 class="color">Venta de libros.</h2>
+            <p>Una puerta hacia el conocimiento, la cultura y la creatividad. A través de ella, se conectan autores con lectores, compartiendo ideas, historias y aprendizajes que enriquecen la vida de las personas. Cada libro vendido es una oportunidad para
+                que alguien explore nuevos mundos, desarrolle habilidades y amplíe su perspectiva. Además, fomenta el hábito de la lectura y apoya la industria literaria, incentivando la creación de más obras que inspiran y educan. ¡Es un puente hacia
+                el crecimiento personal y colectivo!</p>
+            <a class="btn btn-danger col-md-6 offset-md-3 mb-3" href="{{ url_for( 'servicios') }} ">Ver Libros</a>
+        </div>
+        <div class="col-12 col-md-6 carousel-slide" data-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{ url_for('static', filename='img/tapa_primero.png') }}" alt="Tapa de primero" class="img-fluid" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ url_for('static', filename='img/tapa_segundo.png') }}" alt="Tapa de segundo" class="img-fluid" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ url_for('static', filename='img/tapa_tercero.png') }}" alt="Tapa de tercero" class="img-fluid" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ url_for('static', filename='img/tapa_cuarto.png') }}" alt="Tapa de cuarto" class="img-fluid" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ url_for('static', filename='img/tapa_quinto.png') }}" alt="Tapa de quinto" class="img-fluid" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ url_for('static', filename='img/tapa_sexto.png') }}" alt="Tapa de sexto" class="img-fluid" />
+                    </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
+        </div>
 
-<body>
-    <h2>Bienvenido a la parte de:</h2>
-    <h3>SISTEMA WEB PARA EL CONTROL DE VENTAS – RESERVAS DE UNA EDITORIAL CASO ISABOSK”</h3>
-</body>
+    </div>
+</div>
+<h3 class="text-center mt-3 mb-3 tex p-2 color">Testimonios</h3>
+<div class="container row text-bg-light p-4">
+    <div class="col-12 col-md-6 col-lg-3">
+        <img src="{{ url_for('static', filename='img/ana.png') }}" class="img m-2" alt="...">
+    </div>
+    <div class="row  col-12 col-md-6 col-lg-3 mt-3">
+        <h5>Ana G.</h5>
+        <p>"Nunca había considerado la compra de libros en línea hasta que descubrí cómo comparar precios y leer reseñas. Ahora, cada vez que necesito un libro, busco primero en línea. He aprendido a apreciar las ofertas y a elegir cuidadosamente, lo que
+            me ha ahorrado mucho dinero."</p>
+    </div>
+    <div class=" col-12 col-md-6 col-lg-3">
+        <img src="{{ url_for('static', filename='img/laura.png') }}" class="img m-2" alt="...">
+    </div>
+    <div class="row  col-12 col-md-6 col-lg-3 mt-3">
+        <h5>Laura P.</h5>
+        <p>"Mi experiencia al aprender a comprar libros ha sido transformadora. Antes, compraba sin pensar, pero ahora, investigo los autores y busco recomendaciones. Esto ha enriquecido mi biblioteca y, sobre todo, mi vida."</p>
+    </div>
+</div>
 
-</html>
+{% include 'footer.html' %}

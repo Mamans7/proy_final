@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+<div class="container bg-light mt-4">
+    <div class="col col-md-8 mx-auto">
+        <h3 class="text-center pt-2">Contacto</h3>
+        <hr>
+        <form class="form-signin" method="post">
+            <label>Nombre:</label>
+            <input type="text" id="iNombre" class="form-control" placeholder="Nombre" autofocus>
+
+            <label class="mt-2">Usuario:</label>
+            <input type="email" id="iUsario" class="form-control" placeholder="Usuario" minlength="8">
+
+            <label class="mt-2">Mensaje:</label>
+            <textarea class="form-control " name=" " id=" " rows="3 "></textarea>
+
+            <button class="col-12 btn btn-info mt-4 mb-4" type="submit">Continuar</button>
+        </form>
+    </div>
+</div>
+{% include 'footer2.html' %}
